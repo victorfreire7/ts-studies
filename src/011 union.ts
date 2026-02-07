@@ -3,6 +3,10 @@
 
 //// string | number | boolean
 
+// type rgb = 'vermelho' | 'verde' | 'azul';
+// type cmyk = 'ciano' | 'magente' | 'amarelo' | 'preto';
+// type Colors = rgb | cmyk
+
 function addOrConcat(
   a: number | string,
   b: number | string
@@ -16,3 +20,5 @@ function addOrConcat(
 
 console.log(addOrConcat(10, 20));
 console.log(addOrConcat('10', '20'));
+
+export default 1
