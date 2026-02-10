@@ -1,9 +1,9 @@
 /*
   Atributos:
-    - public
-    - private
+    - public: acessivel de todas as maneiras/instancias; dentro de fora da Class.
+    - private: encapsulamento. atributo que restringe a acessibilidade apenas para dentro da Class.
     - protected
-    - readonly
+    - readonly: Atributo que permite apenas a leitura de um dado; nao alterações.
 
   - Semelhtante a Class no JS;
   - funciona também como Type;
