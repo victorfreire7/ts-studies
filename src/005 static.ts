@@ -1,3 +1,6 @@
+// STATIC é uma utilidade POO do TS que permite o acesso a uma chave ou método
+// de uma class sem a instância da mesma.
+
 export class Pessoa {
   static cpfPadrao: string = '000.000.000-00';
 
