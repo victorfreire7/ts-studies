@@ -1,4 +1,4 @@
-// baseado nos parametros que minha função receber;
+// baseado nos parametros que minha função receber
 // eu consigo fazer ela se comportar de maneira diferente;
 // funciona no campo 'type'.
 // exemplo:
