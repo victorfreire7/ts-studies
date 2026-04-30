@@ -24,9 +24,17 @@ const pessoa: Pessoa = {
   salario: 20000,
 };
 
-function setCorPreferida(pessoa: Pessoa, cor: AllColors): Pessoa {
-  return { ...pessoa, corPreferida: cor };
+function setCorPreferida(pessoa: Pessoa, cor: AllColors): Pessoa { // estou esperando que seja enviado algo com o type 'Pessoa' e uma cor 'AllColors'
+  return { ...pessoa, corPreferida: cor }; // '...pessoa' NÃO É REST OPERATOR - É UM Spread Operator.
 }
 
 console.log(setCorPreferida(pessoa, 'amarelo'));
 console.log(pessoa);
+
+/*
+Spread vs Rest — a diferença
+----------------------------------------------------------------------------------------------------
+|  Sintaxe               |    Nome        |      Onde aparece        |     O que faz
+|  { ...pessoa }         |    Spread      |      Ao criar um objeto  |     Espalha propriedades
+|  function f(...args)   |    Rest        |      Em parâmetros       |     Agrupa argumentos em array
+*/
