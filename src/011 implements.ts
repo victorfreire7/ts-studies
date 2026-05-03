@@ -1,6 +1,6 @@
 /*
-  ao criar um type que seja exercida apenas dentro de uma função, nó podemos utilizar duas class para isso;
-  utilizando abstract class na super-class. Da seguinte maneira:
+  ao criar um type que seja exercida apenas dentro de uma função, nós podemos utilizar duas classes
+  utilizando abstract na super-class, da seguinte maneira:
 */
 
 export abstract class TipoPessoa {
