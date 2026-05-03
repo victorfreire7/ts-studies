@@ -1,6 +1,6 @@
 /*
   Atributos:
-    - public: acessivel de todas as maneiras/instancias; dentro de fora da Class.
+    - public: acessivel de todas as maneiras/instancias; dentro e fora da Class.
     - private: encapsulamento. atributo que restringe a acessibilidade apenas para dentro da Class.
     - protected: permite acesso a chave dentro de sua classe e sub-classes.
     - readonly: Atributo que permite apenas a leitura de um dado; nao alterações.
@@ -32,7 +32,7 @@ export class Empresa {
   }
 }
 
-export class Colaborador {
+export class Colaborador { // Definindo os atributos de encapsulamento dentro do constructor
   constructor(
     public readonly nome: string,
     public readonly sobrenome: string,

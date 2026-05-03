@@ -1,7 +1,7 @@
 /*
-  uma maneira de associar dois itens de forma independente.
-  associations sao tipo 'tem 1'; diferente das heranças que 'são 1'
-  liga 2 objetos sem gerar dependencias entre ambos
+  - uma maneira de associar dois itens de forma independente.
+  association é tipo "tem 1"; diferente das heranças que é "são 1"
+  - liga 2 objetos sem gerar dependencias entre ambos
 
   essa estrutura de projeto é chamado de "dependency inversion", (quando
   nao ligamos uma class diretamente a outra, e sim criamos uma abstract class).

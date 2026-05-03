@@ -1,5 +1,5 @@
 /*
-  Tipo d realaçao de duas classes aonde ambos objetos funcionam separadamente mesmo sedno
+  Tipo d relaçao de duas classes aonde ambos objetos funcionam separadamente mesmo sedno
   feitos para estar unidos.
   Exemplo: Carrinho e Produtos
 
@@ -7,14 +7,20 @@
   - ligação mais forte
   - 1 para vários
 
-  visualizaçao do diagrama em docs/'008 associacao.png'
+  visualizaçao do diagrama em docs/'009 agregacao.png'
 */
 
+export class Produtos{
+  constructor(
+    public nome: string,
+    public preco: number
+  ){}
+}
 
 export class Carrinho{
-  private readonly produtos: Array<Produtos> = [];
+  private readonly produtos: Array<Produtos> = []; // atributo privado pois nao há necessidade de acessar ele fora da class, tendo em vista que isso nao vai ser manipulado pelo usuario
 
-  inserirProdutos(... arg: Array<Produtos>): void {
+  inserirProdutos(...arg: Array<Produtos>): void { // coloco todos os parametros enviados dentro de um array, desde que o type do argumento seja igual a <Produto>
     for(var i = 0; i < arg.length; i++){
       this.produtos.push(arg[i]);
     }
@@ -31,14 +37,6 @@ export class Carrinho{
     }
     return count;
   }
-}
-
-
-export class Produtos{
-  constructor(
-    public nome: string,
-    public preco: number
-  ){}
 }
 
 const carrinho = new Carrinho();

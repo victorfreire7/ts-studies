@@ -1,5 +1,5 @@
-// super-classe se referem a Classes que sao extendidas;
-// as classes que recebem a extensão, sub-classes
+// super-classe se referem a Classes que sao extendidas; elas não sao propriamente definidas no código.
+// as classes que recebem a extensão são sub-classes
 
 // quando estamos dentro de um método de uma Sub-Class que se diz respeito a super;
 // muitas vezes precisamos alterar o método e também utilizar ele originalmente.

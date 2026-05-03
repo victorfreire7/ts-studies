@@ -1,8 +1,8 @@
 /*
-  O atributo 'private' utilizado no constructor restringe o instanciamento de uma class;
-permitindo apenas dentro da mesma. O código abaixo utiliza o padrao singleton e factory
-method (GoF). O exemplo faz a conexao de um banco, mas permite apenas 1 conexão. O
-método static permite que a class seja acessada sem instância.
+    O atributo 'private' utilizado no constructor restringe o instanciamento de uma class;
+  permitindo apenas dentro da mesma. O código abaixo utiliza o padrao singleton e factory
+  method (GoF). O exemplo faz a conexao de um banco, mas permite apenas 1 conexão. O
+  método static permite que a class seja acessada sem instância.
 */
 
 export class Database {

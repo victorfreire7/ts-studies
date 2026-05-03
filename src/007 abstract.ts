@@ -1,5 +1,5 @@
 /*
-Abstract é uma utilizade poo que torna obrigatorio a utilização de um método ou atributo dentro de uma
+Abstract é uma utilidade p.o.o que torna obrigatorio a utilização de um método ou atributo dentro de uma
 sub-classe; quando usado em uma super-class, faz com que a class tenha como objetivo apenas se extender.
 
 - Super-Classes abstratas nao podem ser instanciadas diretamente
@@ -27,11 +27,11 @@ export abstract class Personagem {
     console.log(`${this.nome} agora tem ${this.vida} de vida.`)
   }
 
-  abstract bordao(): void
+  abstract bordao(): void // usado na super-classe, logo é obrigatorio a extensao desse método
 }
 
 export class Guerreira extends Personagem {
-  protected emoji = '\u{1F9DD}';
+  protected emoji = '\u{1F9DD}'; // id de um emoji
 
   bordao(): void {
     console.log('BORDAO GUERREIRA');
@@ -39,7 +39,7 @@ export class Guerreira extends Personagem {
 }
 
 export class Monstro extends Personagem {
-  protected emoji = '\u{1F9DF}';
+  protected emoji = '\u{1F9DF}'; // id de um emoji
 
   bordao(): void {
     console.log('BORDAO MONSTRO');
