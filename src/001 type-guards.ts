@@ -20,14 +20,12 @@ mostrarNome(new Aluno('Victor'))
 
 /*
   'nome' in obj:
-
-  controle de fluxo que verifica se o valor 'nome' é constado no parametro enviado.
+    controle de fluxo que verifica se o valor 'nome' é constado no parametro enviado.
 
   instanceof:
-
-  sintax js native, confirma se o primeiro parametro enviado
-  consta com todos valores solicitador pela instancia
-  do segundo parametro.
+    sintax js native, confirma se o primeiro parametro enviado
+    consta com todos valores solicitador pela instancia
+    do segundo parametro.
 
 */
 

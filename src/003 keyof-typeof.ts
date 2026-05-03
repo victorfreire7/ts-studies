@@ -1,5 +1,5 @@
 /* CoresObj:
-  type CoresObj = {
+  typeof CoresObj = {
     vermelho: string;
     verde: string;
     azul: string;
@@ -7,17 +7,18 @@
 */
 
 /* CoresChaves:
-  type CoresChaves = "vermelho" | "verde" | "azul"
+  keyof CoresChaves = "vermelho" | "verde" | "azul"
 */
 
-type CoresObj = typeof coresObj; // guardo todos os valores de um objeto ja existente aqui. 'copio'
-type CoresChaves = keyof CoresObj; // transforma os valores de uma 'as const' enviado em alias union.
 
 const coresObj = {
   vermelho: 'red',
   verde: 'green',
   azul: 'blue',
 }
+
+type CoresObj = typeof coresObj; // guardo todos os valores de um objeto ja existente aqui. 'copio'
+type CoresChaves = keyof CoresObj; // transforma os valores de uma 'as const' enviado em alias union.
 
 function traduzirCor(cor: CoresChaves, cores: CoresObj) {
   return cores[cor];
