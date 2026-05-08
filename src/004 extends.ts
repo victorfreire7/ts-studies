@@ -1,5 +1,6 @@
 // podemos restringir um generic há uma única funcionalidade.
 // o exemplo abaixo cria uma função que recebe um objeto e uma chave, e retorna o valor dentro da chave.
+// essa restrição também é chamado de 'contrains'
 
 // essa restrinção só funciona quando o generic é inferido antes dos parametros.
 type ObterChaveFn = <O, K extends keyof O>(objeto: O, chave: K) => O[K];
