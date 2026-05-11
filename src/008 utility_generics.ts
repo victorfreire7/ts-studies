@@ -56,4 +56,23 @@ type ABC = 'A' | 'B' | 'C';
 type CDE = 'C' | 'D' | 'E';
 
 type excludeABC = Exclude<ABC, CDE>; // Guarda os tipos que estão em ABC e NÃO estão em CDE;
-type extractCDE = Extract<ABC, CDE>; // Faz o contrario de Exclude: Retorna a chave presente nos dois tipos 
+type extractCDE = Extract<ABC, CDE>; // Faz o contrario de Exclude: Retorna a chave presente nos dois tipos
+
+// --------------------------------------------
+// EXEMPLO:
+
+type AccountMongo = {
+  _id: string;
+  nome: string
+  idade: number;
+}
+
+type AccountAPI = Pick<AccountMongo, Exclude<keyof AccountMongo, '_id'>> & { id: string }
+
+const obj6: AccountAPI = {
+  id: 'gfugyc-k8765', // Mudamos a chave '_id' -> 'id;
+  nome: 'victor',
+  idade: 18
+}
+
+console.log(obj6);
